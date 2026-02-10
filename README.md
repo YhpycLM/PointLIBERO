@@ -51,6 +51,14 @@ cd PointLibero/experiments/robot/libero
 python re_point_libero.py --libero_task_suit libero_spatial --libero_raw_data_dir the original path --libero_target_dir path to regenerated dataset directory
 
 ```
-* (4) By running the code above, you will get an HDF5 file, but this is not the universal RLDS format.
-
+* (4) By running the code above, you will get an HDF5 file, but this is not the universal RLDS format. It is recommended to install in a new directory and a new conda environment.
+```
+cd rlds_trans
+git clone kpertsch/rlds_dataset_builder
+conda env create -f environment_ubuntu.yml
+conda activate rlds_env
+cp pointlibero/LIBERO_Spatial_dataset_builder.py rlds_trans/rlds_dataset_builder_main/LIBERO_Spatial/
+python LIBERO_Spatial_dataset_builder.py
+```
+* (5) Repeat the above steps to generate the complete PointLIBERO.
 

@@ -35,4 +35,7 @@ git clone [https://github.com/Lifelong-Robot-Learning/LIBERO.git](https://github
 # Install LIBERO dependencies
 cd LIBERO
 pip install -e .
-cd ..
+```bash
+
+### 2. Generate PointLIBERO Data (HDF5)
+Select the LIBERO suite you wish to process (e.g., libero_spatial) and run the generation script.

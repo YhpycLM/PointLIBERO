@@ -20,8 +20,8 @@ This repository contains the implementation of **"PointLIBERO: Unlocking Spatial
 
 To generate the PointLIBERO dataset, follow the steps below.
 
-### 1. Environment Setup
-First, clone the official LIBERO repository and set up the environment.
+### 1. Environment Setup and Data Preparation
+Clone the official LIBERO repository and set up the environment.
 
 ```
 # Create and activate the conda environment
@@ -30,12 +30,13 @@ conda activate pointlibero
 
 # Clone the original LIBERO repository
 cd PointLibero
-git clone [https://github.com/Lifelong-Robot-Learning/LIBERO.git](https://github.com/Lifelong-Robot-Learning/LIBERO.git)
+git clone https://github.com/Lifelong-Robot-Learning/LIBERO.git
 
 # Install LIBERO dependencies
 cd LIBERO
 pip install -e .
 ```
+Download raw data from [LIBERO](https://libero-project.github.io/main.html)
 
 ### 2. Generate PointLIBERO Data (HDF5)
 Select the LIBERO suite you wish to process (e.g., libero_spatial) and run the generation script.
@@ -55,7 +56,7 @@ The output from the previous step is a standard HDF5 file. To convert this into 
 ```
 # Clone the RLDS dataset builder
 cd rlds_trans
-git clone [https://github.com/kpertsch/rlds_dataset_builder.git](https://github.com/kpertsch/rlds_dataset_builder.git)
+git clone https://github.com/kpertsch/rlds_dataset_builder.git
 
 #  Create a separate environment for RLDS
 conda env create -f environment_ubuntu.yml

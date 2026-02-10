@@ -23,7 +23,7 @@ To generate the PointLIBERO dataset, follow the steps below.
 ### 1. Installation & Environment Setup
 First, clone the official LIBERO repository and set up the environment.
 
-```bash
+```
 # Create and activate the conda environment
 conda create -n pointlibero python=3.10 -y
 conda activate pointlibero
@@ -35,7 +35,7 @@ git clone [https://github.com/Lifelong-Robot-Learning/LIBERO.git](https://github
 # Install LIBERO dependencies
 cd LIBERO
 pip install -e .
-```bash
+```
 
 ### 2. Generate PointLIBERO Data (HDF5)
 Select the LIBERO suite you wish to process (e.g., libero_spatial) and run the generation script.

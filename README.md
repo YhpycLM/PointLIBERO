@@ -67,3 +67,4 @@ cp pointlibero/LIBERO_Spatial_dataset_builder.py rlds_dataset_builder/rlds_datas
 # 4. Run the builder
 python LIBERO_Spatial_dataset_builder.py
 ```
+Repeat the above steps on all suits to generate the complete PointLIBERO

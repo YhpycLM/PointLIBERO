@@ -29,6 +29,7 @@
 
 ## Highlight!!!!
 This repo is the implementation of "PointLIBERO: Unlocking Spatial Awareness in VLAs with a Novel 3D Dataset and a Lightweight framework".
+
 ## TODO
 - [x] Release PointLIBERO
 - [ ] Release CheckPoint and Test Code

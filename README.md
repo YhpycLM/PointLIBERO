@@ -39,3 +39,14 @@ pip install -e .
 
 ### 2. Generate PointLIBERO Data (HDF5)
 Select the LIBERO suite you wish to process (e.g., libero_spatial) and run the generation script.
+```
+# Navigate to the directory
+cd pointlibero/experiments/robot/libero
+
+# Run the generation script
+# Replace arguments with your actual paths
+python re_point_libero.py \
+  --libero_task_suite libero_spatial \
+  --libero_raw_data_dir /path/to/original/libero/data \
+  --libero_target_dir /path/to/save/pointlibero/data
+```

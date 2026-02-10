@@ -20,7 +20,7 @@ This repository contains the implementation of **"PointLIBERO: Unlocking Spatial
 
 To generate the PointLIBERO dataset, follow the steps below.
 
-### 1. Installation & Environment Setup
+### 1. Environment Setup
 First, clone the official LIBERO repository and set up the environment.
 
 ```
@@ -49,4 +49,21 @@ python re_point_libero.py \
   --libero_task_suite libero_spatial \
   --libero_raw_data_dir /path/to/original/libero/data \
   --libero_target_dir /path/to/save/pointlibero/data
+```
+### 3. Convert to RLDS Format
+The output from the previous step is a standard HDF5 file. To convert this into the universal RLDS format, we recommend using a separate environment to avoid dependency conflicts.
+```
+# Clone the RLDS dataset builder
+cd rlds_trans
+git clone [https://github.com/kpertsch/rlds_dataset_builder.git](https://github.com/kpertsch/rlds_dataset_builder.git)
+
+#  Create a separate environment for RLDS
+conda env create -f environment_ubuntu.yml
+conda activate rlds_env
+
+#  Copy the PointLIBERO builder script to the RLDS directory
+cp pointlibero/LIBERO_Spatial_dataset_builder.py rlds_dataset_builder/rlds_dataset_builder_main/LIBERO_Spatial/
+
+# 4. Run the builder
+python LIBERO_Spatial_dataset_builder.py
 ```

@@ -2,7 +2,7 @@
 
 # PointLIBERO: Unlocking Spatial Awareness in VLAs with a Novel 3D Dataset and a Lightweight Framework
 
-**Meng Li** · **Qi Zhao** · [**Shuchang Lyu**](https://cv-shuchanglyu.github.io/EnHome.html) · **Jun Jiang** · **Longhao Zou** · [**Guangliang Cheng**](https://sites.google.com/view/guangliangcheng)
+**Meng Li** · **Lijiang Chen** · **Qi Zhao** · **Jun Jiang** · **Longhao Zou** · **Mingcheng Luo** · [**Shuchang Lyu**](https://cv-shuchanglyu.github.io/EnHome.html) · [**Guangliang Cheng**](https://sites.google.com/view/guangliangcheng) · [**Chenguang Yang**]([https://sites.google.com/view/guangliangcheng](https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/)) 
 
 </div>
 
